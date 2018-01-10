@@ -1,0 +1,14 @@
+{
+  "name": "frontend-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:rtxrulez/frontend-boilerplate.git",
+  "author": "rtxrulez <vafarulez@ya.ru>",
+  "license": "MIT",
+  "dependencies": {
+    "gulp-cli": "^2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "4"
+  }
+}
