@@ -6,9 +6,12 @@
   "author": "rtxrulez <vafarulez@ya.ru>",
   "license": "MIT",
   "dependencies": {
-    "gulp-cli": "^2.0.0"
+    "gulp-cli": "^2.0.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-pug": "^3.3.0"
   },
   "devDependencies": {
-    "gulp": "4"
+    "gulp": "4",
+    "gulp-sass": "^3.1.0"
   }
 }
