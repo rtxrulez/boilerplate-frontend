@@ -1,6 +1,7 @@
 const truePath = 'dist/'
 const path = {
     templates: "src/templates/",
+    data: "src/templates/data/",
     styles: "src/styles/",
     js: "src/js/",
     img: "src/images/",
