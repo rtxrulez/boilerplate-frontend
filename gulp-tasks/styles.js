@@ -1,10 +1,11 @@
 const config =      require('./config')
 const gulp =        require('gulp')
 const sass =        require('gulp-sass')
-const plumber =     require('plumber')
+const plumber =     require('gulp-plumber')
 
-gulp.task('stylus', function(){
-    return gulp.src([config.path.styles])
+
+gulp.task('styles', function(){
+    return gulp.src([config.path.styles + '*.scss', config.path.styles + '*.sass'])
       .pipe(plumber({
         errorHandler: function (error) {
           console.log(error.message);

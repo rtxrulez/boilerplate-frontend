@@ -1,0 +1,31 @@
+include ../mixins/svg
+include ../mixins/btn
+include ../mixins/icon
+// variables
+- var imgpath = 'images/'
+
+
+block config
+    - var pageTitle = 'Dooglys'
+    - var pageDescription = 'Главная страница Dooglys'
+    - var bodyClass = ''
+
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        include ../partials/head
+
+        block styles
+            include ../partials/styles
+    body(class=bodyClass)
+        .container-layout
+            block header
+                include ../partials/header
+            main.wrapper
+                block main
+
+            block content-footer
+                include ../partials/footer
+
+        block scripts
+            include ../partials/scripts

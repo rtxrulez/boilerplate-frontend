@@ -1,0 +1,405 @@
+{
+  "title": "Кафе",
+  "sidebar": [{
+    "name": "Бизнес ланч",
+    "href": "#",
+    "mod": "active"
+  },
+    {
+      "name": "Десерты",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Горячие блюда",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Супы",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Пасты",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Горячие закуски",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Завтраки",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Салаты",
+      "href": "#",
+      "mod": ""
+    },
+    {
+      "name": "Свежевыжитые соки",
+      "href": "#",
+      "status": "sidebar__item_archive",
+      "icon": "recover-category",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    },
+    {
+      "name": "Кофе",
+      "href": "#",
+      "status": "disabled",
+      "mod": ""
+    }
+  ],
+  "navbar": [
+    {
+      "name": "Отчеты",
+      "isactive": "",
+      "iconname": "report",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "divider": true
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Предприятие",
+      "isactive": "",
+      "iconname": "structure",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Номенклатура",
+      "isactive": "active",
+      "iconname": "nomenclature",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Персонал",
+      "isactive": "",
+      "iconname": "hr",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Маркетинг",
+      "isactive": "",
+      "iconname": "marketing",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Справочники",
+      "isactive": "",
+      "iconname": "dictionary",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Склад",
+      "isactive": "",
+      "iconname": "warehouse",
+      "submenu": [
+        {
+          "name": "Товары",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Меню",
+          "isactive": "",
+          "href": "#"
+        },
+        {
+          "name": "Спецификации",
+          "isactive": "",
+          "href": "#"
+        }
+      ]
+    }
+  ],
+
+  "tablelist": [{
+    "name": "Окрошка",
+    "label": "Товар",
+    "ed": "Штука",
+    "sebst": "22$",
+    "price": "234$"
+  },
+    {
+      "name": "Молочная тюрка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Свекольник",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Сырный суп",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Ягодный летний суп",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    },
+    {
+      "name": "Окрошка",
+      "label": "Товар",
+      "ed": "Штука",
+      "sebst": "22$",
+      "price": "234$"
+    }
+  ]
+}

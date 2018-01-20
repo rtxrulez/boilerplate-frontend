@@ -22,6 +22,7 @@ const path = {
     srcComponentsPlan: "../components/plan/src/",
     distComponentsPlan: "../components/plan/dist/"
   };
-export const config = {
-    path: path
+
+module.exports = {
+  path: path
 };

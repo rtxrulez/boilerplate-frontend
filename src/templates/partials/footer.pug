@@ -1,0 +1,51 @@
+footer.footer
+    include ../partials/registration-modal
+    .container
+        .footer-content
+            .logo.logo_footer
+                a.logo__link(href="/")
+                    img.img-responsive.logo__img(src=`${imgpath}logo-gray.svg`)
+                p.footer-content__text
+                    | г. Нижний Новгород,
+                    br
+                    | пл. Лядова, 2
+
+            nav.main-menu.main-menu_footer
+                a.btn-menu(href="/") Стоимость
+                a.btn-menu(href="/") Безопасность
+                a.btn-menu(href="/") Новости
+                a.btn-menu(href="/") Совместимость
+                a.btn-menu(href="/") Контакты
+
+            .contact-widget
+                a.phone-number(href="tel: 88003333429") 8 800 3333-429
+
+                p.footer-content__text
+                    | с 9
+                    span.time 00
+                    | до 18
+                    span.time 00
+                    | , ежедневно,
+                    br
+                    | по России бесплатно
+
+        .row.footer-splash
+            .col-xs-4
+                span.d-b.copy ⓒ 2017 Dooglys
+                a(href="") Правила использования
+                |  и
+                a(href="") Правовая информация
+
+            .col-xs-5.text-center
+                a.social-btn(href="")
+                    +icon('telegram')
+                a.social-btn(href="")
+                    +icon('vk')
+                a.social-btn(href="")
+                    +icon('skype')
+                a.social-btn(href="")
+                    +icon('twitter')
+                a.social-btn(href="")
+                    +icon('facebook')
+
+.menu-open-bg

@@ -1,0 +1,29 @@
+
+nav.header-nav
+    .logo
+        a.logo__link(href="/")
+            img.img-responsive.logo__img(src=`${imgpath}logo-full.svg`)
+
+    nav.main-menu
+        a.btn-menu(href="/") Стоимость
+        a.btn-menu(href="/") Безопасность
+        a.btn-menu(href="/") О продукте
+        a.btn-menu(href="/") Новости
+        a.btn-menu(href="/") Совместимость
+        a.btn-menu(href="/") Контакты
+
+        .login-widget.login-widget_main-menu
+            a.login-widget__link(href="/login.html") Войти
+            a.login-widget__quit(href="/")
+                +icon('sign-in')
+
+    button.btn-menu.btn-menu_submit(type="button", data-toggle="modal", data-target="#registration-modal") Начать
+    button.btn-menu.btn-toggle-mobile-menu(type="button")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+
+    .login-widget
+        a.login-widget__link(href="/login.html") Войти
+        a.login-widget__quit(href="/")
+            +icon('sign-in')
