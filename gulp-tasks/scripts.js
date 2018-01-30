@@ -1,6 +1,7 @@
 const config = require("./config");
 const gulp = require("gulp");
 const sass = require("gulp-sass");
+const uglify = require('gulp-uglify');
 const plumber = require("gulp-plumber");
 
 gulp.task("styles", function() {
