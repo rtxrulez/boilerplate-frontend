@@ -3,7 +3,7 @@ const path = {
     templates: "src/templates/",
     data: "src/templates/data/",
     styles: "src/styles/",
-    js: "src/js/",
+    scripts: "src/scripts/",
     img: "src/images/",
     svgSprite: "src/images/svg-sprite/",
     svgPicture: "src/images/svg-picture/",
@@ -11,7 +11,7 @@ const path = {
     dist: {
       pages: "dist/",
       styles: `${truePath}/styles`,
-      js: `${truePath}/js/`,
+      scripts: `${truePath}/scripts/`,
       img: `${truePath}/images/`,
       svgSprite: `${truePath}/images/svg-sprite/`,
       sprite: `${truePath}/images/sprite/`,

@@ -1,20 +1,19 @@
 const config = require("./config");
 const gulp = require("gulp");
-const sass = require("gulp-sass");
-const uglify = require('gulp-uglify');
-const plumber = require("gulp-plumber");
+const babel = require("gulp-babel");
+const livereload = require("gulp-livereload");
+const gulpIf = require("gulp-if");
+const concat = require("gulp-concat");
 
-gulp.task("styles", function() {
-  return gulp
-    .src([config.path.styles + "*.scss", config.path.styles + "*.sass"])
-    .pipe(
-      plumber({
-        errorHandler: function(error) {
-          console.log(error.message);
-          this.emit("end");
-        }
-      })
-    )
-    .pipe(sass())
-    .pipe(gulp.dest(config.path.dist.styles));
+// режим разработки?
+const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
+
+gulp.task("scripts", function(cb) {
+  gulp
+    .src(config.path.scripts + "*.js")
+    .pipe(concat("app.js"))
+    .pipe(babel())
+    .pipe(gulpIf(dev, livereload()))
+    .pipe(gulp.dest(config.path.dist.scripts));
+  cb();
 });

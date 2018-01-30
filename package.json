@@ -5,20 +5,29 @@
   "repository": "git@github.com:rtxrulez/frontend-boilerplate.git",
   "author": "rtxrulez <vafarulez@ya.ru>",
   "license": "MIT",
+  "babel": {
+    "presets": [
+      "latest"
+    ]
+  },
   "dependencies": {},
   "devDependencies": {
+    "babel-core": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "del": "^3.0.0",
     "gulp": "4",
     "gulp-babel": "^7.0.1",
     "gulp-cache": "^1.0.2",
     "gulp-cli": "^2.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
     "gulp-uglify": "^3.0.0",
     "require-dir": "^0.3.2"
   }
