@@ -8,14 +8,16 @@ const autoprefixer = require('autoprefixer');
 const livereload   = require("gulp-livereload");
 const gulpIf       = require("gulp-if");
 
-// Настройки postcss
-const postcssPlugins = [ 
-  require('postcss-pseudo-class-enter'),
-  autoprefixer()
-]
 // режим разработки?
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
 
+
+// Настройки postcss
+const postcssPlugins = [
+  require("css-mqpacker"), // группирует медиа выражения
+  require('postcss-pseudo-class-enter'), // позволяет писать один псевдокласс для :focus и :hover
+  autoprefixer(),
+]
 
 gulp.task("styles", function() {
   return gulp
@@ -31,6 +33,11 @@ gulp.task("styles", function() {
     )
     .pipe(sass())
     .pipe(postcss(postcssPlugins))
+    .pipe(gulpIf(!dev, postcss([ // Если продакшен то сжимаем стили 
+      require('cssnano')({
+        preset: 'default',
+      })
+    ])))
     .pipe(gulpIf(dev, sourcemaps.write('.')))
     .pipe(gulpIf(dev, livereload()))
     .pipe(gulp.dest(config.path.dist.styles));

@@ -5,6 +5,10 @@
   "repository": "git@github.com:rtxrulez/frontend-boilerplate.git",
   "author": "rtxrulez <vafarulez@ya.ru>",
   "license": "MIT",
+  "scripts": {
+    "start": "NODE_ENV=dev gulp styles",
+    "prod": "NODE_ENV=prod gulp styles"
+  },
   "babel": {
     "presets": [
       "latest"
@@ -19,6 +23,8 @@
     "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
+    "css-mqpacker": "^6.0.2",
+    "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gulp": "4",
     "gulp-babel": "^7.0.1",
