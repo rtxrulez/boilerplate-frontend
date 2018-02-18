@@ -11,11 +11,12 @@
     ]
   },
   "browserslist": [
-      "> 1%",
-      "last 2 versions"
+    "> 1%",
+    "last 2 versions"
   ],
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^8.0.0",
     "babel-core": "^6.26.0",
     "babel-preset-latest": "^6.24.1",
     "del": "^3.0.0",
@@ -32,9 +33,10 @@
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.0",
-    "require-dir": "^0.3.2",
-    "autoprefixer": "^8.0.0",
-    "postcss": "^6.0.19"
+    "postcss": "^6.0.19",
+    "postcss-pseudo-class-enter": "^3.0.1",
+    "require-dir": "^0.3.2"
   }
 }
