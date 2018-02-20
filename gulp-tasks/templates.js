@@ -17,7 +17,7 @@ gulp.task(function templates(cb) {
       pug({
         locals: data,
         pretty: !dev
-      }).on("error", function(error) {
+      }).on("error", function (error) {
         console.log(error);
       })
     )

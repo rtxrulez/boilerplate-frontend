@@ -8,7 +8,7 @@ const concat = require("gulp-concat");
 // режим разработки?
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
 
-gulp.task("scripts", function(cb) {
+gulp.task("scripts", function (cb) {
   gulp
     .src(config.path.scripts + "*.js")
     .pipe(concat("app.js"))

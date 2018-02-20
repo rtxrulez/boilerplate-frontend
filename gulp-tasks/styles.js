@@ -1,12 +1,12 @@
-const config       = require("./config");
-const gulp         = require("gulp");
-const sass         = require("gulp-sass");
-const plumber      = require("gulp-plumber");
-const postcss      = require('gulp-postcss');
-const sourcemaps   = require('gulp-sourcemaps');
+const config = require("./config");
+const gulp = require("gulp");
+const sass = require("gulp-sass");
+const plumber = require("gulp-plumber");
+const postcss = require('gulp-postcss');
+const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
-const livereload   = require("gulp-livereload");
-const gulpIf       = require("gulp-if");
+const livereload = require("gulp-livereload");
+const gulpIf = require("gulp-if");
 
 // режим разработки?
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
@@ -19,13 +19,13 @@ const postcssPlugins = [
   autoprefixer(),
 ]
 
-gulp.task("styles", function() {
+gulp.task("styles", function () {
   return gulp
     .src([config.path.styles + "*.scss", config.path.styles + "*.sass"])
     .pipe(gulpIf(dev, sourcemaps.init()))
     .pipe(
       plumber({
-        errorHandler: function(error) {
+        errorHandler: function (error) {
           console.log(error.message);
           this.emit("end");
         }
