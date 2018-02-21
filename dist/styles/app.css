@@ -1,1 +1,7 @@
-body{background:#fff;display:-ms-flexbox;display:flex}
+body {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/*# sourceMappingURL=app.css.map */

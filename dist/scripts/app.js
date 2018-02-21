@@ -1,4 +1,4 @@
 'use strict';
 
 var str = 'ES6';
-console.log('Hello ' + str);
+console.log('Hello ' + str + ' 1');
