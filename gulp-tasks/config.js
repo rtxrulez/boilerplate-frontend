@@ -9,7 +9,7 @@ const path = {
   svgPicture: "src/images/svg-picture/",
   fonts: "src/fonts/",
   dist: {
-    pages: "dist/",
+    pages: `${truePath}`,
     styles: `${truePath}/styles`,
     scripts: `${truePath}/scripts/`,
     img: `${truePath}/images/`,
@@ -19,6 +19,16 @@ const path = {
   }
 };
 
+const server = {
+  server: {
+    baseDir: path.dist.pages
+  },
+  port: 3005,
+  open: false,
+  notify: false
+}
+
 module.exports = {
-  path: path
+  path: path,
+  server: server
 };
