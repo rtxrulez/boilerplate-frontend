@@ -17,16 +17,22 @@ const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
 
 // Настройки postcss
 const postcssPlugins = [
+  require('precss')({
+    import: {
+      extension: 'scss'
+    }
+  }), // транспилинг scss 
   require("css-mqpacker"), // группирует медиа выражения
   require('postcss-pseudo-class-enter'), // позволяет писать один псевдокласс для :focus и :hover
   autoprefixer(),
 ];
 
-if(dev) { // Если режим разработки то определенный набор плагинов для postcss
+if (dev) { // Если режим разработки то определенный набор плагинов для postcss
   postcssPlugins.push(
     stylelint(),
     reporter({
-      selector: 'body:before'
+      selector: 'body:before',
+      clearReportedMessages: true
     })
   )
 } else {
@@ -37,7 +43,7 @@ if(dev) { // Если режим разработки то определенн�
 
 gulp.task("styles", function (cb) {
   gulp
-    .src([config.path.styles + "*.scss", config.path.styles + "*.sass"])
+    .src([config.path.styles + "*.scss", config.path.styles + "*.css"])
     .pipe(gulpIf(dev, sourcemaps.init()))
     .pipe(
       plumber({
@@ -47,8 +53,8 @@ gulp.task("styles", function (cb) {
         }
       })
     )
-    .pipe(sass())
-    
+    // .pipe(sass())
+
     .pipe(postcss(postcssPlugins))
     // .pipe(gulpIf(!dev, postcss([ // Если продакшен то сжимаем стили 
     //   require('cssnano')({

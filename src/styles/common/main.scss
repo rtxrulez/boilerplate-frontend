@@ -296,16 +296,6 @@ blockquote {
   cursor: progress;
 }
 
-.mfp-zoom-out-cur,
-.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: zoom-out;
-}
-
-.mfp-zoom {
-  cursor: pointer;
-  cursor: zoom-in;
-}
-
 .mfp-auto-cursor .mfp-content {
   cursor: auto;
 }
@@ -726,21 +716,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-.itemList {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -ms-flex-line-pack: stretch;
-  align-content: stretch;
-}
 
 .item {
   width: 18em;
