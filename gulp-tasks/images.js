@@ -6,7 +6,6 @@ const cache = require("gulp-cache");
 
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
 
-console.log("dev status: ", dev);
 
 gulp.task(function images(cb) {
   gulp

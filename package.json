@@ -40,9 +40,12 @@
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-stylelint": "^6.0.0",
     "gulp-uglify": "^3.0.0",
     "postcss": "^6.0.19",
+    "postcss-browser-reporter": "^0.5.0",
     "postcss-pseudo-class-enter": "^3.0.1",
-    "require-dir": "^0.3.2"
+    "require-dir": "^0.3.2",
+    "stylelint": "^9.1.1"
   }
 }

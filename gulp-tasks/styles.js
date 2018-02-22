@@ -6,7 +6,10 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 const gulpIf = require("gulp-if");
-const browserSync = require('browser-sync').create();
+// const gulpStylelint = require('gulp-stylelint');
+const stylelint = require('stylelint');
+const reporter = require('postcss-browser-reporter');
+// const browserSync = require('browser-sync').create();
 
 // режим разработки?
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
@@ -17,7 +20,20 @@ const postcssPlugins = [
   require("css-mqpacker"), // группирует медиа выражения
   require('postcss-pseudo-class-enter'), // позволяет писать один псевдокласс для :focus и :hover
   autoprefixer(),
-]
+];
+
+if(dev) { // Если режим разработки то определенный набор плагинов для postcss
+  postcssPlugins.push(
+    stylelint(),
+    reporter({
+      selector: 'body:before'
+    })
+  )
+} else {
+  postcssPlugins.push(require('cssnano')({
+    preset: 'default',
+  }))
+}
 
 gulp.task("styles", function (cb) {
   gulp
@@ -32,15 +48,21 @@ gulp.task("styles", function (cb) {
       })
     )
     .pipe(sass())
+    
     .pipe(postcss(postcssPlugins))
-    .pipe(gulpIf(!dev, postcss([ // Если продакшен то сжимаем стили 
-      require('cssnano')({
-        preset: 'default',
-      })
-    ])))
+    // .pipe(gulpIf(!dev, postcss([ // Если продакшен то сжимаем стили 
+    //   require('cssnano')({
+    //     preset: 'default',
+    //   })
+    // ])))
+    // .pipe(gulpStylelint({
+    //   reporters: [
+    //     {formatter: 'string', console: true}
+    //   ]
+    // }))
     .pipe(gulpIf(dev, sourcemaps.write('.')))
     .pipe(gulp.dest(config.path.dist.styles))
-    .pipe(gulpIf(dev, browserSync.stream()))
-    // .pipe(browserSync.stream())
+  // .pipe(gulpIf(dev, browserSync.stream()))
+  // .pipe(browserSync.stream())
   cb();
 });
