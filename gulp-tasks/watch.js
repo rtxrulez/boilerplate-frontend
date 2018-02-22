@@ -1,6 +1,5 @@
 const config = require("./config");
 const gulp = require("gulp");
-// const livereload = require("gulp-livereload");
 const styles = require("./styles");
 const templates = require("./templates");
 const scripts = require("./scripts");
@@ -9,7 +8,6 @@ const images = require("./images");
 
 gulp.task("watch", function (cb) {
   global.watch = true;
-  // livereload.listen();
 
   gulp.watch(config.path.templates + '**/*.pug', gulp.parallel('templates'));
   gulp.watch(config.path.styles + '**/*.*', gulp.parallel('styles'));

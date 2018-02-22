@@ -5,8 +5,8 @@ const plumber = require("gulp-plumber");
 const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
-const livereload = require("gulp-livereload");
 const gulpIf = require("gulp-if");
+const reload = require('browser-sync').reload;
 
 // режим разработки?
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
@@ -19,8 +19,8 @@ const postcssPlugins = [
   autoprefixer(),
 ]
 
-gulp.task("styles", function () {
-  return gulp
+gulp.task("styles", function (cb) {
+  gulp
     .src([config.path.styles + "*.scss", config.path.styles + "*.sass"])
     .pipe(gulpIf(dev, sourcemaps.init()))
     .pipe(
@@ -39,6 +39,7 @@ gulp.task("styles", function () {
       })
     ])))
     .pipe(gulpIf(dev, sourcemaps.write('.')))
-    .pipe(gulpIf(dev, livereload()))
-    .pipe(gulp.dest(config.path.dist.styles));
+    .pipe(gulp.dest(config.path.dist.styles))
+    .pipe(gulpIf(dev, reload({stream: true})))
+  cb();
 });
