@@ -10,6 +10,8 @@ const watch = require("./watch");
 
 gulp.task('default', gulp.series(
   gulp.parallel('templates', 'styles', 'scripts', 'fonts', 'images'),
-  'server',
-  'watch'
+  gulp.parallel(
+    'watch',
+    'server'
+  )
 ));

@@ -1,1 +1,1 @@
-{"version":3,"sources":["common/main.scss"],"names":[],"mappings":"AAAA;EACI,iBAAgB;EAChB,qBAAa;EAAb,qBAAa;EAAb,cAAa,EAChB","file":"app.css","sourcesContent":["body {\n    background: #fff;\n    display: flex;\n}"]}
+{"version":3,"sources":["common/main.scss"],"names":[],"mappings":"AAAA;EACI,0BAAyB;EACzB,eAAc,EACjB","file":"app.css","sourcesContent":["body {\n    background: paleturquoise;\n    display: block;   \n}"]}

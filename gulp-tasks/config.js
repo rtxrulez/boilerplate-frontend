@@ -23,6 +23,13 @@ const server = {
   server: {
     baseDir: path.dist.pages
   },
+  files: [
+    `${path.dist.styles}**/*.css`,
+    `${path.dist.scripts}**/*.js`,
+    `${path.dist.fonts}**/*`,
+    `${path.dist.images}**/*`,
+    `${path.dist.pages}**/*.html`,
+  ],
   port: 3005,
   open: false,
   notify: false

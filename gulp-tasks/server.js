@@ -4,7 +4,8 @@ const browserSync = require('browser-sync').create();
 
 gulp.task("server", function (cb) {
   browserSync.init(
-    config.server
+    config.server,
+    cb
   );
   cb();
 });

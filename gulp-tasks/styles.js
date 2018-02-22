@@ -6,7 +6,7 @@ const postcss = require('gulp-postcss');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('autoprefixer');
 const gulpIf = require("gulp-if");
-const reload = require('browser-sync').reload;
+const browserSync = require('browser-sync').create();
 
 // режим разработки?
 const dev = !process.env.NODE_ENV || process.env.NODE_ENV == "dev";
@@ -40,6 +40,7 @@ gulp.task("styles", function (cb) {
     ])))
     .pipe(gulpIf(dev, sourcemaps.write('.')))
     .pipe(gulp.dest(config.path.dist.styles))
-    .pipe(gulpIf(dev, reload({stream: true})))
+    .pipe(gulpIf(dev, browserSync.stream()))
+    // .pipe(browserSync.stream())
   cb();
 });
