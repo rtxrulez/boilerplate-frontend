@@ -468,13 +468,18 @@ button::-moz-focus-inner {
 }
 
 .mfp-arrow-left:after {
-  border-right: 17px solid #FFF;
+  border-right: 17px solid #FFggg;
   margin-left: 31px;
+}
+
+@mixin border-radius($radius) {
+  border-radius-top: $radius;
 }
 
 .mfp-arrow-left:before {
   margin-left: 25px;
   border-right: 27px solid #3F3F3F;
+  @include border-radius(10px)
 }
 
 .mfp-arrow-right {
