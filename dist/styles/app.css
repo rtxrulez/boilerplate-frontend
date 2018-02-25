@@ -1,5 +1,5 @@
 body {
-  background-color: #00ffff; }
+  background-color: #00f; }
 
 a {
   color: green; }
@@ -22,6 +22,6 @@ body:before {
   white-space: pre-wrap;
   font-family: Menlo, Monaco, monospace;
   text-shadow: 0 1px #A82734;
-  content: "src/styles/app.css\00000a1:1	Expected newline before \"}\" (block-closing-brace-newline-before) [stylelint]\00000a4:1	Expected newline before \"}\" (block-closing-brace-newline-before) [stylelint]\00000a2:3	Expected \"#00ffff\" to be \"#0ff\" (color-hex-length) [stylelint]"; }
+  content: "src/styles/app.css\00000a1:1	Expected newline before \"}\" (block-closing-brace-newline-before) [stylelint]\00000a4:1	Expected newline before \"}\" (block-closing-brace-newline-before) [stylelint]"; }
 
 /*# sourceMappingURL=app.css.map */
