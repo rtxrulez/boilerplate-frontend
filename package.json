@@ -45,8 +45,10 @@
     "postcss": "^6.0.19",
     "postcss-browser-reporter": "^0.5.0",
     "postcss-pseudo-class-enter": "^3.0.1",
+    "postcss-scss": "^1.0.3",
     "precss": "^3.1.1",
     "require-dir": "^0.3.2",
-    "stylelint": "^9.1.1"
+    "stylelint": "^9.1.1",
+    "stylelint-config-standard": "^18.1.0"
   }
 }

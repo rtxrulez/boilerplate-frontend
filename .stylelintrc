@@ -1,7 +1,9 @@
 {
+  "extends": "stylelint-config-standard",
   "rules": {
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
-    "block-no-empty": true
+    "block-no-empty": true,
+    "block-closing-brace-newline-before": "always"
   }
 }
