@@ -4,6 +4,7 @@
     "color-no-invalid-hex": true,
     "declaration-block-no-duplicate-properties": true,
     "block-no-empty": true,
-    "block-closing-brace-newline-before": "always"
+    "block-closing-brace-newline-before": "always",
+    "indentation": 4
   }
 }

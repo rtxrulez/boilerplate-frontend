@@ -4,9 +4,8 @@ body {
 a {
   color: green; }
 
-body:before {
-  display: block;
-  z-index: 1000;
+/*# sourceMappingURL=app.css.map */
+index: 1000;
   position: fixed;
   top: 0;
   left: 0;
